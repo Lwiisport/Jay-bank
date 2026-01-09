@@ -21,14 +21,14 @@ jobs:
 
           # Fail if no .java files
           if [ -z "$JAVA_FILES" ]; then
-            echo "❌ No .java files found"
+            echo "No .java files found"
             exit 1
           fi
 
           # Fail if any .class files exist
           CLASS_FILES=$(find . -type f -name "*.class")
           if [ -n "$CLASS_FILES" ]; then
-            echo "❌ Compiled .class files found (bad practice):"
+            echo "Compiled .class files found (bad practice):"
             echo "$CLASS_FILES"
             exit 1
           fi
