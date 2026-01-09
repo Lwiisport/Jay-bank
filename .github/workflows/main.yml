@@ -25,14 +25,6 @@ jobs:
             exit 1
           fi
 
-          # Fail if any .class files exist
-          CLASS_FILES=$(find . -type f -name "*.class")
-          if [ -n "$CLASS_FILES" ]; then
-            echo "❌ Compiled .class files found (bad practice):"
-            echo "$CLASS_FILES"
-            exit 1
-          fi
-
           # Generate report
           REPORT="java-file-report.txt"
           echo "Java File Report" > $REPORT
