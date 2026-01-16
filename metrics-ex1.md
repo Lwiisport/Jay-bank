@@ -1,3 +1,4 @@
+# Louis Gallo Infres 17
 # Exercice 1 (Repo 1): Discover the Code & Rough Size
 
 
